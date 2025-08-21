@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "895249592534",
+    "firebase_url": "https://fyp-project-74085-default-rtdb.firebaseio.com",
+    "project_id": "fyp-project-74085",
+    "storage_bucket": "fyp-project-74085.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895249592534:android:67d784b43981ce6ed19977",
+        "android_client_info": {
+          "package_name": "com.example.paksecureexchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895249592534-tfqf191poaivhr2p0653vhiukcdhapbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paksecureexchange",
+            "certificate_hash": "a4685620093af98a94e3ea080cddecd3c1f83f9d"
+          }
+        },
+        {
+          "client_id": "895249592534-u3muklnvllaeiqj36adgmk0ingb7b05e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5DN7FBCvDaGs1wMQUsgVGbYhGSjlQv24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895249592534-u3muklnvllaeiqj36adgmk0ingb7b05e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "895249592534-er53m826s7rv2m6gftgpn4mblsl8lk1o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.paksecureexchange"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
