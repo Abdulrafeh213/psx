@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../constants/colors.dart';
 import '../../../widgets/custom_button.dart';
 import '../controllers/authentication_controller.dart';
 
@@ -14,7 +15,7 @@ class AuthenticationView extends GetView<AuthenticationController> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          const Spacer(flex: 2),
+          const Spacer(flex: 3),
           Center(
             child: Image.asset(
               'assets/images/PSX-Logo1.png',
@@ -40,6 +41,8 @@ class AuthenticationView extends GetView<AuthenticationController> {
                 children: [
                   CustomButton(
                     text: 'Continue with Phone',
+                    TextColor: AppColors.textColor,
+                    BackgroundColor: AppColors.white,
                     icon: Icons.phone_android,
                     onPressed: () {
                       Get.toNamed('/loginPhone');
@@ -48,13 +51,15 @@ class AuthenticationView extends GetView<AuthenticationController> {
                   const SizedBox(height: 16),
                   CustomButton(
                     text: 'Continue with Email',
+                    TextColor: AppColors.textColor,
+                    BackgroundColor: AppColors.white,
                     icon: Icons.email,
                     onPressed: () {
                       Get.toNamed('/loginEmail');
                     },
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 50),
 
                   Center(
                     child: Text(
@@ -71,6 +76,7 @@ class AuthenticationView extends GetView<AuthenticationController> {
                     child: GestureDetector(
                       onTap: () {
                         Get.toNamed('/singupEmail');
+                        // Get.toNamed('/otpVerification');
                       },
                       child: Text(
                         "Create a New Account",
@@ -103,7 +109,7 @@ class AuthenticationView extends GetView<AuthenticationController> {
                       ),
                       textAlign: TextAlign.center,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

@@ -5,8 +5,6 @@ import '../controllers/ads_controller.dart';
 class AdsBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<AdsController>(
-      () => AdsController(),
-    );
+    Get.lazyPut<AdsController>(() => AdsController());
   }
 }

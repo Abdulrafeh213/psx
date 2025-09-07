@@ -19,6 +19,16 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.textColor,
   );
+  static final TextStyle heading3 = GoogleFonts.montserrat(
+    fontSize: FontSizes.large,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textColor,
+  );
+  static final TextStyle heading4 = GoogleFonts.montserrat(
+    fontSize: FontSizes.medium,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textColor,
+  );
 
   static final TextStyle heading2 = GoogleFonts.montserrat(
     fontSize: FontSizes.xl,
@@ -27,6 +37,13 @@ class AppTextStyles {
   );
 
   static final TextStyle appBar = GoogleFonts.roboto(
+    fontSize: FontSizes.large,
+    fontWeight: FontWeight.bold,
+    color: AppColors.white,
+  );
+
+  static final TextStyle appBarDis = GoogleFonts.roboto(
+    fontSize: FontSizes.regular,
     fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
@@ -52,14 +69,44 @@ class AppTextStyles {
     color: AppColors.white,
   );
 
+  static final TextStyle tiles = TextStyle(
+    fontSize: FontSizes.medium,
+    color: AppColors.textColor,
+  );
+
+  static final TextStyle adsTiles = TextStyle(
+    fontSize: FontSizes.regular,
+      fontWeight: FontWeight.bold,
+    color: AppColors.textColor,
+  );
+
   static final TextStyle button1 = GoogleFonts.montserrat(
     fontSize: FontSizes.medium,
     fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
-  static final TextStyle button = GoogleFonts.roboto(
-    fontSize: FontSizes.large,
+
+
+  static final TextStyle adsTiles1 = GoogleFonts.montserrat(
+    fontSize: FontSizes.regular,
     fontWeight: FontWeight.bold,
     color: AppColors.textColor,
+  );
+
+  static final TextStyle adsTiles2 = GoogleFonts.montserrat(
+    fontSize: FontSizes.medium,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textColor,
+  );
+
+  static final TextStyle adsTiles3 = TextStyle(
+    fontSize: FontSizes.xs,
+    color: AppColors.textColor,
+  );
+
+
+  static final TextStyle button = GoogleFonts.roboto(
+    fontSize: FontSizes.medium,
+    fontWeight: FontWeight.bold,
   );
 }

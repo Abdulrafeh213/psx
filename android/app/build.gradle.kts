@@ -8,12 +8,21 @@ plugins {
 
 android {
     namespace = "com.example.paksecureexchange"
+<<<<<<< HEAD
     compileSdk = 35
+=======
+    compileSdk = 36
+>>>>>>> 6b88a58 (Your commit message)
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+<<<<<<< HEAD
+=======
+
+        isCoreLibraryDesugaringEnabled = true
+>>>>>>> 6b88a58 (Your commit message)
     }
 
     kotlinOptions {
@@ -26,7 +35,11 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 24
+<<<<<<< HEAD
         targetSdk = 35
+=======
+        targetSdk = 36
+>>>>>>> 6b88a58 (Your commit message)
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -47,4 +60,8 @@ flutter {
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.1.0"))
     implementation("com.google.firebase:firebase-analytics")
+<<<<<<< HEAD
+=======
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
+>>>>>>> 6b88a58 (Your commit message)
 }

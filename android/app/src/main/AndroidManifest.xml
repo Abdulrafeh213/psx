@@ -27,7 +27,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+<<<<<<< HEAD
             </intent-filter>
+=======
+
+            </intent-filter>
+
+>>>>>>> 6b88a58 (Your commit message)
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
@@ -35,7 +41,12 @@
             android:name="flutterEmbedding"
             android:value="2" />
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+<<<<<<< HEAD
 
+=======
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBEohl_hhVYLD3ENSKThyBPtH1WKL2_f94"/>
+>>>>>>> 6b88a58 (Your commit message)
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

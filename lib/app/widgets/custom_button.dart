@@ -6,6 +6,8 @@ class CustomButton extends StatelessWidget {
   final IconData? icon;
   final String? image;
   final VoidCallback onPressed;
+  final BackgroundColor;
+  final TextColor;
 
   const CustomButton({
     super.key,
@@ -13,6 +15,8 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.icon,
     this.image,
+    required this.BackgroundColor,
+    required this.TextColor,
   });
 
   @override
@@ -20,23 +24,20 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.grey[200],
-        padding: const EdgeInsets.symmetric(vertical: 20),
+        foregroundColor: TextColor,
+        backgroundColor: BackgroundColor,
+        padding: const EdgeInsets.symmetric(vertical: 16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           if (icon != null)
-            Icon(icon, size: 25)
+            Icon(icon, size: 20, color: TextColor)
           else if (image != null)
-            Image.asset(image!, width: 25, height: 25),
+            Image.asset(image!, width: 20, height: 20),
           const SizedBox(width: 10),
-          Text(
-            text,
-            style: AppTextStyles.button,
-          ),
+          Text(text, style: AppTextStyles.button.copyWith(color: TextColor)),
         ],
       ),
     );

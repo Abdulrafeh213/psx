@@ -10,7 +10,6 @@ class SplashScreenView extends GetView<SplashScreenController> {
   @override
   final SplashScreenController controller = Get.put(SplashScreenController());
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
